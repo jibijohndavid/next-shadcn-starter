@@ -35,20 +35,11 @@ export default function Home() {
             <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
               <Button size="lg" className="text-base" asChild>
                 <Link
-                  href="https://nextjs.org/docs"
+                  href="https://github.com/jibijohndavid/next-shadcn-starter"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Get Started
-                </Link>
-              </Button>
-              <Button variant="outline" size="lg" className="text-base" asChild>
-                <Link
-                  href="https://ui.shadcn.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Documentation
                 </Link>
               </Button>
             </div>
