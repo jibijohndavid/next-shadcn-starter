@@ -24,10 +24,6 @@
 .DS_Store
 *.pem
 
-# local files
-.kiro/*
-docs/*
-
 # debug
 npm-debug.log*
 yarn-debug.log*
@@ -43,4 +39,5 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-
+.kiro/*
+docs/*
