@@ -1,9 +1,0 @@
-# PNPM Workspace Configuration
-# This file defines the workspace structure for PNPM
-
-packages:
-  # Include the root package
-  - "."
-# Optional: Define patterns for packages if this becomes a monorepo
-# - 'packages/*'
-# - 'apps/*'
