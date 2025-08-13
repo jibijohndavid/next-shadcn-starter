@@ -6,11 +6,12 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import Image from "next/image";
-import { registerWithEmail } from "../auth.actions";
+import { registerWithEmail } from "@/actions/auth.actions";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { signUpSchema, type SignUpFormData } from "../auth.schema";
+import { signUpSchema, type SignUpFormData } from "@/schemas/auth.schema";
 import { useState, useTransition } from "react";
+import Link from "next/link";
 
 export function SignupForm({
   className,
@@ -141,9 +142,9 @@ export function SignupForm({
 
               <div className="text-center text-sm">
                 Already have an account?{" "}
-                <a href="/login" className="underline underline-offset-4">
+                <Link href="/login" className="underline underline-offset-4">
                   Login
-                </a>
+                </Link>
               </div>
             </div>
           </form>
@@ -158,8 +159,9 @@ export function SignupForm({
         </CardContent>
       </Card>
       <div className="text-muted-foreground *:[a]:hover:text-primary text-center text-xs text-balance *:[a]:underline *:[a]:underline-offset-4">
-        By clicking continue, you agree to our <a href="#">Terms of Service</a>{" "}
-        and <a href="#">Privacy Policy</a>.
+        By clicking continue, you agree to our{" "}
+        <Link href="#">Terms of Service</Link> and{" "}
+        <Link href="#">Privacy Policy</Link>.
       </div>
     </div>
   );
